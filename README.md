@@ -1,13 +1,3 @@
-# Bellabeat-Fitness-Tracker-Usage
----
-title: "Bellabeat Case Study"
-output: html_document
-date: "2022-08-11"
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
 ## Case Study Google Data Analytics Certification: Bellabeat Fitness
 
@@ -38,7 +28,7 @@ library(tidyr)
 library(lubridate)
 ```
 
-```{r cleaning data}
+```{r load in data}
 weight <- read.csv ("weightLogInfo_merged.csv")
 activity <- read.csv('dailyActivity_merged.csv')
 calories <- read.csv ("hourlyCalories_merged.csv")
@@ -47,9 +37,7 @@ sleep <- read.csv("sleepDay_merged.csv")
 steps <- read.csv("hourlySteps_merged.csv")
 heartrate <- read.csv ("heartrate_seconds_merged.csv")
 
-#Used head to get a quick look at the data 
-
-
+#I used head to get a quick look at the data 
 head(weight)
 head(activity)
 head(calories)
@@ -62,8 +50,6 @@ head(heartrate)
 #1. ID and Date/Time are common in all the data frames. We can use these values to join our datasets. 
 #2. We will need to convert the date field from AM/PM to a datetime format to be able to properly analyze our data 
 
-
-
 #Used summary function to look for na values 
 summary(weight)
 summary(activity)
@@ -72,7 +58,6 @@ summary(intensity)
 summary(sleep)
 summary(steps)
 summary(heartrate)
-
 
 #Na values were found in weight data, so I corrected this by setting those values to zero. 
 weight[is.na (weight)]=0
@@ -100,7 +85,6 @@ heartrate[duplicated(heartrate),]
 sleep %>% distinct(TotalSleepRecords, .keep_all = TRUE)
 sleep[duplicated(sleep),]
 
-
 #I then filtered the sleep data to make sure there weren’t any values that didn’t make sense. It wouldn’t make sense for there to be more time asleep than more time in bed. 
 sleep %>% filter (TotalMinutesAsleep>TotalTimeInBed)
 
@@ -112,7 +96,7 @@ sleep$SleepDay = as.POSIXct(sleep$SleepDay ,tz="UTC", format = "%m/%d/%Y %I:%M:%
 Now that my data was cleaned and sorted, I went to Tableua to create my data visualizations.  
 
 ### Data Visualizations
-
+<center><iframe src="https://public.tableau.com/views/CourseraCaseStudy2SleepHabits/Dashboard1?:showVizHome=no&:embed=true"width="650" height="860" frameborder="0"></iframe></center>
 
 
 ### Data limitations
