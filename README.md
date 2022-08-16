@@ -98,9 +98,9 @@ Now that my data was cleaned and sorted, I went to Tableua to create my data vis
 ### Data Visualizations
 
 ![sleep](https://user-images.githubusercontent.com/110944333/184970215-25106701-182b-4a11-a7a6-897afcf9d0bd.PNG)
-
-
-
+![Totalstepsvs totalcaloriesburnt](https://user-images.githubusercontent.com/110944333/184971948-dd4298ed-f525-47ac-b34d-09761b91c4e1.PNG)
+![heatmap](https://user-images.githubusercontent.com/110944333/184972140-54b34af7-e29c-4f70-8ee9-397bd50f4cf3.PNG)
+![Useoffeatures](https://user-images.githubusercontent.com/110944333/184972223-66d28818-5a1f-4a14-86d9-0344899d6b5a.PNG)
 
 ### Data limitations
 
