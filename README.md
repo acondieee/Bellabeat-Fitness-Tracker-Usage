@@ -96,7 +96,10 @@ sleep$SleepDay = as.POSIXct(sleep$SleepDay ,tz="UTC", format = "%m/%d/%Y %I:%M:%
 Now that my data was cleaned and sorted, I went to Tableua to create my data visualizations.  
 
 ### Data Visualizations
-<center><iframe src="https://public.tableau.com/views/CourseraCaseStudy2SleepHabits/Dashboard1?:showVizHome=no&:embed=true"width="650" height="860" frameborder="0"></iframe></center>
+
+![sleep](https://user-images.githubusercontent.com/110944333/184970215-25106701-182b-4a11-a7a6-897afcf9d0bd.PNG)
+
+
 
 
 ### Data limitations
