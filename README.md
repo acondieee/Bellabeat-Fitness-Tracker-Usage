@@ -116,11 +116,6 @@ Total steps walked vs. calories burnt shows a clear relationship between more st
 </p>
 Based on the calendar heat map, users logged more daily activities the first 3 weeks, with the most activity logged seen in the first week. After that, less activities are logged, showing users being less engaged with their device. 
 
-
-
-
-
-
 <p align="center">
   <img width="600" height="500" src="https://user-images.githubusercontent.com/110944333/184972223-66d28818-5a1f-4a14-86d9-0344899d6b5a.PNG">
 </p>
